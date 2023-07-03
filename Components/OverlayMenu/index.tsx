@@ -7,9 +7,9 @@ const OverlayMenu = () => {
 
   let menuVisibilty = useContext(MenuContext)
 
-  const OverlayClasses = classNames('w-full h-56 px-4 transition-all relative top-0 z-10',{
+  const OverlayClasses = classNames('block lg:hidden w-full h-56 px-4 transition-all relative top-0 z-10',{
     'left-0': menuVisibilty.menu,
-    '-left-96': !menuVisibilty.menu,
+    '-left-96 sm:-left-[900px]': !menuVisibilty.menu,
 
 })
   return (
