@@ -9,7 +9,7 @@ const OverlayMenu = () => {
 
   const OverlayClasses = classNames('w-full h-56 px-4 transition-all relative top-0 z-10',{
     'left-0': menuVisibilty.menu,
-    '-left-80': !menuVisibilty.menu,
+    '-left-96': !menuVisibilty.menu,
 
 })
   return (
