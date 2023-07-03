@@ -1,5 +1,5 @@
+"use client"
 
-import React from 'react'
 import HamburgerNav from '../Hamburger'
 
 const Navigation = () => {

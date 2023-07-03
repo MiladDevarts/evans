@@ -1,9 +1,19 @@
-import React from 'react'
+"use client"
+
+import React, { useContext } from 'react'
+import { MenuContext } from '@/context/MenuProvider'
 
 const HamburgerNav = () => {
+
+    let menuVisibilty = useContext(MenuContext)
+
+    const handleMenu = () => {
+        menuVisibilty.setMenu(!menuVisibilty.menu)
+    }
+
     return (
         <div>
-            <input type="checkbox" id="menu" className="menu visuallyHidden" />
+            <input onClick={handleMenu} type="checkbox" id="menu" className="menu visuallyHidden" />
             <label htmlFor="menu">
                 <div className="hamburger hamburger-inner">
                     <span className="bar bar1"></span>

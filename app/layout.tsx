@@ -1,9 +1,12 @@
-import HamburgerNav from '@/Components/Hamburger'
+
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navigation from '@/Components/Navigation'
 
 const inter = Inter({ subsets: ['latin'] })
+
+import MenuProvider from '@/context/MenuProvider'
+
 
 export const metadata = {
   title: 'Exolo',
@@ -18,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navigation/>
-        {children}
+        <MenuProvider>
+          <Navigation />
+          {children}
+        </MenuProvider>
       </body>
     </html>
   )
