@@ -25,3 +25,62 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.hamburger {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute; 
+}
+
+.bar1 {
+  top: 0;
+  
+}
+
+.bar2,
+.bar3 {
+  top: 13.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+.menu:checked + label > .hamburger-inner > .bar1{
+  transform: rotate(45deg);
+  transform-origin: 5%;
+  width: 41px
+}
+
+.menu:checked + label > .hamburger-inner > .bar2 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+.menu:checked + label > .hamburger-inner > .bar3 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.menu:checked + label > .hamburger-inner > .bar4 {
+  transform-origin: 5%;
+  transform: rotate(-45deg);
+  width: 41px;
+}
