@@ -1,6 +1,7 @@
 import HamburgerNav from '@/Components/Hamburger'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Navigation from '@/Components/Navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <HamburgerNav />
+        <Navigation/>
         {children}
       </body>
     </html>
