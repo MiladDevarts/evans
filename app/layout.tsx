@@ -1,12 +1,14 @@
 
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Teko } from 'next/font/google'
 import Navigation from '@/Components/Navigation'
 
-const inter = Inter({ subsets: ['latin'] })
+const teko = Teko({
+  subsets: ['latin'],
+  weight: '400'
+})
 
 import MenuProvider from '@/context/MenuProvider'
-
 
 export const metadata = {
   title: 'Exolo',
@@ -20,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={teko.className}>
         <MenuProvider>
           <Navigation />
           {children}

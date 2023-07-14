@@ -1,5 +1,6 @@
 "use client"
 
+import Hero from "@/Components/Hero"
 import OverlayMenu from "@/Components/OverlayMenu"
 
 export default function Home() {
@@ -7,8 +8,8 @@ export default function Home() {
   return (
     <>
     <OverlayMenu/>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-
+      <main className="flex w-full flex-col items-center justify-start h-screen">
+        <Hero />
       </main>
     </>
   )
