@@ -3,6 +3,7 @@ import './globals.css'
 import { Teko } from 'next/font/google'
 import Navigation from '@/Components/Navigation'
 
+
 const teko = Teko({
   subsets: ['latin'],
   weight: '400'
