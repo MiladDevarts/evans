@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-    <OverlayMenu/>
+      <OverlayMenu />
       <main className="flex w-full flex-col items-center justify-start h-screen">
         <Hero />
       </main>
